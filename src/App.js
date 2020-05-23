@@ -1,26 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// How to use fontawesome in react
+// import { faCheckSquare, faSpinner } from "@fortawesome/free-solid-svg-icons";
+// import { faSquare } from "@fortawesome/free-regular-svg-icons";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>React Hackathon Project</div>;
 }
 
 export default App;
+
+// export default () => <FontAwesomeIcon icon={faCamera} size="2x" />
+// FontAwesomeIcon 컴포넌트에는
+// fixedWidth, inverse, listItem, rotation, flip, spin, purse, border, pull 등 다양한 prop가 존재
