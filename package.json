@@ -35,7 +35,12 @@
       "react/jsx-one-expression-per-line": 0,
       "quotes": 0,
       "react/self-closing-comp": 0,
-      "arrow-body-style": 0
+      "arrow-body-style": 0,
+      "prefer-template": 0,
+      "camelcase": 0,
+      "no-restricted-properties": 0,
+      "object-curly-newline": 0,
+      "operator-linebreak": 0
     }
   },
   "husky": {
