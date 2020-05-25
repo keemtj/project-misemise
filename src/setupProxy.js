@@ -14,4 +14,10 @@ module.exports = (app) => {
       changeOrigin: true,
     }),
   );
+  // app.use(
+  //   createProxyMiddleware('/6d4d776b466c656533356a4b4b5872', {
+  //     target: 'http://openapi.seoul.go.kr:8088/',
+  //     changeOrigin: true,
+  //   }),
+  // );
 };

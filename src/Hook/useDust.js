@@ -1,15 +1,15 @@
 /* eslint-disable consistent-return */
 import { useEffect, useReducer } from 'react';
 import { initialDustState, reducer } from '../Reducer/dustReducer';
-import { dustApi } from '../Api/dustApi';
+import dustApi from '../Api/dustApi';
 
 const useDust = () => {
   const [dustState, dispatch] = useReducer(reducer, initialDustState);
 
   const fetchDustData = async () => {
+    const dustData = await dustApi.get();
     try {
       dispatch({ type: 'LOADING' });
-      const dustData = await dustApi.get();
 
       if (dustData.status === 200) dispatch({ type: 'SUCCESS', dustData: dustData.data });
       else dispatch({ type: 'ERROR', error: { state: true, message: dustData.statusText } });
