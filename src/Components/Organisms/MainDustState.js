@@ -38,15 +38,17 @@ const MainDustState = () => {
       }
     >
       <div>(현재위치)</div>
-      <div>{addr}</div>
+      <div className="main-addr">{addr}</div>
       <div>{dustData[localIndex] ? dustData[localIndex].MSRDT : ''}</div>
-      <div style={{ fontSize: '4rem', color: '#F8F8F8' }}>
+      <div className="main-icon" style={{ fontSize: '4rem', color: '#F8F8F8' }}>
         <Smile />
       </div>
       <div>{localDustPM10.state}</div>
       <div>{localDustPM10.message}</div>
       <Link to="/">
-        <button type="button">날씨날씨</button>
+        <button className="main-btn" type="button">
+          날씨날씨
+        </button>
       </Link>
     </div>
   );
