@@ -9,7 +9,7 @@ const MinMaxDgreeText = () => {
   const dgreeMax = weatherState.TMX[0] ? +weatherState.TMX[0].value : 0;
 
   return (
-    <strong>
+    <strong style={{ color: 'white' }}>
       최고 {dgreeMax}도 / 최저 {dgreeMin}도
     </strong>
   );

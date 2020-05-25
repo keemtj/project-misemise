@@ -25,10 +25,7 @@ const useLocation = () => {
       const resAddr = await mapApi.getLoc(latitude, longitude);
 
       if (resAddr.status === 200) {
-        const addr =
-          resAddr.data.results[0].region.area2.name +
-          ' ' +
-          resAddr.data.results[0].region.area3.name;
+        const addr = resAddr.data.results[0].region.area2.name + ' ' + resAddr.data.results[0].region.area3.name;
         dispatch({ type: 'SUCCESS', addr, longitude, latitude, nxny });
       } else {
         dispatch({ type: 'ERROR', message: resAddr.statusText });

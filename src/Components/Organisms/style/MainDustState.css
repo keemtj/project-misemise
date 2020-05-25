@@ -1,5 +1,28 @@
 /* MainDustState */
-.main-dust-state {
+.main-dust-state-grinstars {
+  background-color: #0a67ad;
+}
+.main-dust-state-laughsquint {
+  background-color: #0a67ad;
+}
+.main-dust-state-smilewink {
+  background-color: #0a67ad;
+}
+.main-dust-state-smile {
   background-color: #0a67ad;
   color: black;
+}
+.main-dust-state-frown {
+  background-color: orange;
+}
+.main-dust-state-tired {
+  background-color: #dc143c;
+}
+.main-dust-state-dizzy {
+  background-color: #dc143c;
+}
+.main-dust-state-skull {
+  background-color: #181810;
+}
+.main-dust-state {
 }

@@ -18,7 +18,7 @@ const WeatherText = () => {
   else if (skyState === 1) text = '맑음';
   else text = '구름 많음';
 
-  return <strong>{text}</strong>;
+  return <strong style={{ color: 'white' }}>{text}</strong>;
 };
 
 export default WeatherText;

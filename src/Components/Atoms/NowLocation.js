@@ -5,7 +5,7 @@ const NowLocation = () => {
   const context = useContext(AppContext);
   const { locationState } = context;
 
-  return <strong>{locationState.addr}</strong>;
+  return <strong style={{ color: '#ffffff', fontSize: '2rem' }}>{locationState.addr}</strong>;
 };
 
 export default NowLocation;
