@@ -39,7 +39,7 @@ const MainDustState = () => {
     >
       <div>(현재위치)</div>
       <div className="main-addr">{addr}</div>
-      <div>{dustData[localIndex] ? dustData[localIndex].MSRDT : ''}</div>
+      <div>2020-05-25 07:00 PM</div>
       <div className="main-icon" style={{ fontSize: '4rem', color: '#F8F8F8' }}>
         <Smile />
       </div>
