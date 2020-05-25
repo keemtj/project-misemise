@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppContextProvider } from './Context/AppContext';
-import Weather from './Pages/Weather';
+import MainRouter from './Router/MainRouter';
 // How to use fontawesome in react
 // import { faCheckSquare, faSpinner } from "@fortawesome/free-solid-svg-icons";
 // import { faSquare } from "@fortawesome/free-regular-svg-icons";
@@ -8,7 +8,7 @@ import Weather from './Pages/Weather';
 function App() {
   return (
     <AppContextProvider>
-      <Weather />
+      <MainRouter />
     </AppContextProvider>
   );
 }

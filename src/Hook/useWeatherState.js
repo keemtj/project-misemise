@@ -15,7 +15,13 @@ const useWeatherState = () => {
       if (res.status === 200) {
         const weatherArray = res.data.response.body.items.item;
 
-        const recent = weatherArray.filter((weather) => +getToday() <= +weather.fcstDate && (+getTime() <= +weather.fcstTime || weather.category === 'TMN'));
+        const recent = weatherArray.filter(
+          (weather) =>
+            +getToday() <= +weather.fcstDate &&
+            ((+getTime() <= +weather.fcstTime && +getToday() === +weather.fcstDate) || +getToday() !== +weather.fcstDate || weather.category === 'TMN'),
+        );
+
+        console.log('이거봐', recent);
 
         let SKY = recent.filter((data) => data.category === 'SKY');
         SKY = SKY.map((data) => {

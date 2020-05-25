@@ -1,16 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faCloud, faCloudRain, faSnowflake, faCloudShowersHeavy } from '@fortawesome/free-solid-svg-icons';
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 
-import { AppContext } from '../../Context/AppContext';
-
-const WeatherIcon = () => {
-  const context = useContext(AppContext);
-  const { weatherState } = context;
-
-  const skyState = weatherState.SKY[0] ? +weatherState.SKY[0].value : 0;
-  const ptyState = weatherState.PTY[0] ? +weatherState.PTY[0].value : 0;
+const WeatherIcon = ({ SKY, PTY, size }) => {
+  const skyState = SKY ? +SKY.value : 0;
+  const ptyState = PTY ? +PTY.value : 0;
 
   let icon = faQuestionCircle;
 
@@ -22,7 +17,7 @@ const WeatherIcon = () => {
   else if (skyState === 1) icon = faSun;
   else icon = faCloud;
 
-  return <FontAwesomeIcon icon={icon} style={{ color: '#F8F8FF' }} size="10x" />;
+  return <FontAwesomeIcon icon={icon} style={{ color: '#F8F8FF', fontSize: size }} />;
 };
 
 export default WeatherIcon;
