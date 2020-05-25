@@ -1,7 +1,7 @@
 import React, { createContext } from 'react';
+import useDust from '../Hook/useDust';
 import useWeatherState from '../Hook/useWeatherState';
 import useLocationState from '../Hook/useLocationState';
-import useDust from '../Hook/useDust';
 
 const AppContext = createContext(null);
 

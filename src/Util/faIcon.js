@@ -1,16 +1,17 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { faLaughSquint, faGrinStars, faSmileWink, faSmile, faFrown, faTired, faDizzy, faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 import { faSkull, faSun, faCloud, faCloudRain, faSnowflake, faCloudShowersHeavy, faICursor } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const GrinStars = () => <FontAwesomeIcon icon={faGrinStars} />;
-const LaughSquint = () => <FontAwesomeIcon icon={faLaughSquint} />;
-const SmileWink = () => <FontAwesomeIcon icon={faSmileWink} />;
-const Smile = () => <FontAwesomeIcon icon={faSmile} />;
-const Frown = () => <FontAwesomeIcon icon={faFrown} />;
-const Tired = () => <FontAwesomeIcon icon={faTired} />;
-const Dizzy = () => <FontAwesomeIcon icon={faDizzy} />;
-const Skull = () => <FontAwesomeIcon icon={faSkull} />;
+const GrinStars = () => <FontAwesomeIcon icon={faGrinStars} size="3x" />;
+const LaughSquint = () => <FontAwesomeIcon icon={faLaughSquint} size="3x" />;
+const SmileWink = () => <FontAwesomeIcon icon={faSmileWink} size="3x" />;
+const Smile = () => <FontAwesomeIcon icon={faSmile} size="3x" />;
+const Frown = () => <FontAwesomeIcon icon={faFrown} size="3x" />;
+const Tired = () => <FontAwesomeIcon icon={faTired} size="3x" />;
+const Dizzy = () => <FontAwesomeIcon icon={faDizzy} size="3x" />;
+const Skull = () => <FontAwesomeIcon icon={faSkull} size="3x" />;
 
 const QuestionCircle = () => <FontAwesomeIcon icon={faQuestionCircle} />;
 const Sun = () => <FontAwesomeIcon icon={faSun} />;

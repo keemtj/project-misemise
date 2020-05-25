@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { createContext } from 'react';
 import useDust from '../Hook/useDust';
-import { initialDustState } from '../Reducer/reducer';
+import { initialDustState } from '../Reducer/dustReducer';
 
 const DustContext = createContext(initialDustState);
 
