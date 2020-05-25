@@ -40,7 +40,10 @@
       "camelcase": 0,
       "no-restricted-properties": 0,
       "object-curly-newline": 0,
-      "operator-linebreak": 0
+      "operator-linebreak": 0,
+      "implicit-arrow-linebreak": 0,
+      "react/prop-types": 0,
+      "nonblock-statement-body-position": 0
     }
   },
   "husky": {

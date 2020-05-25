@@ -1,10 +1,16 @@
 import React from 'react';
+import { AppContextProvider } from './Context/AppContext';
+import Weather from './Pages/Weather';
 // How to use fontawesome in react
 // import { faCheckSquare, faSpinner } from "@fortawesome/free-solid-svg-icons";
 // import { faSquare } from "@fortawesome/free-regular-svg-icons";
 
 function App() {
-  return <div>React Hackathon Project</div>;
+  return (
+    <AppContextProvider>
+      <Weather />
+    </AppContextProvider>
+  );
 }
 
 export default App;

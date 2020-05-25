@@ -1,23 +1,6 @@
 import React from 'react';
-import {
-  faLaughSquint,
-  faGrinStars,
-  faSmileWink,
-  faSmile,
-  faFrown,
-  faTired,
-  faDizzy,
-  faQuestionCircle,
-} from '@fortawesome/free-regular-svg-icons';
-import {
-  faSkull,
-  faSun,
-  faCloud,
-  faCloudRain,
-  faSnowflake,
-  faCloudShowersHeavy,
-  faICursor,
-} from '@fortawesome/free-solid-svg-icons';
+import { faLaughSquint, faGrinStars, faSmileWink, faSmile, faFrown, faTired, faDizzy, faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
+import { faSkull, faSun, faCloud, faCloudRain, faSnowflake, faCloudShowersHeavy, faICursor } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GrinStars = () => <FontAwesomeIcon icon={faGrinStars} />;
@@ -37,20 +20,4 @@ const Snowflake = () => <FontAwesomeIcon icon={faSnowflake} />;
 const CloudShowersHeavy = () => <FontAwesomeIcon icon={faCloudShowersHeavy} />;
 const ICursor = () => <FontAwesomeIcon icon={faICursor} />;
 
-export {
-  GrinStars,
-  LaughSquint,
-  SmileWink,
-  Smile,
-  Frown,
-  Tired,
-  Dizzy,
-  Skull,
-  QuestionCircle,
-  Sun,
-  Cloud,
-  CloudRain,
-  Snowflake,
-  CloudShowersHeavy,
-  ICursor,
-};
+export { GrinStars, LaughSquint, SmileWink, Smile, Frown, Tired, Dizzy, Skull, QuestionCircle, Sun, Cloud, CloudRain, Snowflake, CloudShowersHeavy, ICursor };
