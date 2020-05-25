@@ -3,6 +3,7 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../../Context/AppContext';
 import { Smile, SmileWink, GrinStars } from '../../Util/faIcon';
+import './style/SubDustState.css';
 
 const SubDustState = () => {
   const context = useContext(AppContext);
@@ -44,39 +45,39 @@ const SubDustState = () => {
           : 'sub-dust-state-smile',
         'sub-dust-state')
       }
-      style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', marginTop: '2rem' }}
+      style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' }}
     >
-      <div>
+      <div className="sub-pm10">
         <div>미세먼지</div>
         <SmileWink />
         <div>{localDustPM10.state}</div>
         <div>{pm10} µm/m³</div>
       </div>
-      <div>
+      <div className="sub-pm25">
         <div>초미세먼지</div>
         <Smile />
         <div>{localDustPM25.state}</div>
         <div>{pm25} µm/m³</div>
       </div>
-      <div>
+      <div className="sub-no2">
         <div>이산화질소</div>
         <GrinStars />
         <div>{localDustNO2.state}</div>
         <div>{no2} ppm</div>
       </div>
-      <div>
+      <div className="sub-o3">
         <div>오존</div>
         <GrinStars />
         <div>{localDustO3.state}</div>
         <div>{o3} ppm</div>
       </div>
-      <div>
+      <div className="sub-co">
         <div>일산화탄소</div>
         <GrinStars />
         <div>{localDustCO.state}</div>
         <div>{co} ppm</div>
       </div>
-      <div>
+      <div className="sub-so2">
         <div>아황산가스</div>
         <GrinStars />
         <div>{localDustSO2.state}</div>
