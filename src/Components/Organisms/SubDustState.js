@@ -1,3 +1,5 @@
+/* eslint-disable no-nested-ternary */
+/* eslint-disable indent */
 import React, { useContext } from 'react';
 import { AppContext } from '../../Context/AppContext';
 import { Smile, SmileWink, GrinStars } from '../../Util/faIcon';
@@ -21,7 +23,29 @@ const SubDustState = () => {
   const so2 = dustData[localIndex] ? dustData[localIndex].SO2 : '';
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', marginTop: '2rem' }}>
+    <div
+      className={
+        (localDustPM10.state === '최고 좋음'
+          ? 'sub-dust-state-grinstars'
+          : localDustPM10 === '좋음'
+          ? 'sub-dust-state-laughsquint'
+          : localDustPM10 === '양호'
+          ? 'sub-dust-state-smilewink'
+          : localDustPM10 === '보통'
+          ? 'sub-dust-state-smile'
+          : localDustPM10 === '나쁨'
+          ? 'sub-dust-state-frown'
+          : localDustPM10 === '상당히 나쁨'
+          ? 'sub-dust-state-tired'
+          : localDustPM10 === '매우 나쁨'
+          ? 'sub-dust-state-dizzy'
+          : localDustPM10 === '최악'
+          ? 'sub-dust-state-skull'
+          : 'sub-dust-state-smile',
+        'sub-dust-state')
+      }
+      style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', marginTop: '2rem' }}
+    >
       <div>
         <div>미세먼지</div>
         <SmileWink />

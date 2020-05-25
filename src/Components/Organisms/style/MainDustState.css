@@ -6,10 +6,10 @@
   background-color: #0a67ad;
 }
 .main-dust-state-smilewink {
-  background-color: #0a67ad;
+  background-color: #40e0d0;
 }
 .main-dust-state-smile {
-  background-color: #0a67ad;
+  background-color: #40e0d0;
   color: black;
 }
 .main-dust-state-frown {
@@ -25,4 +25,22 @@
   background-color: #181810;
 }
 .main-dust-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 70vh;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+button {
+  /* border-style: none; */
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0;
+  width: 5rem;
+  height: 1.5rem;
+  border: none;
+  background-color: yellow;
 }
