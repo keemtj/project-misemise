@@ -22,7 +22,7 @@ const WeatherIcon = () => {
   else if (skyState === 1) icon = faSun;
   else icon = faCloud;
 
-  return <FontAwesomeIcon icon={icon} size="10x" />;
+  return <FontAwesomeIcon icon={icon} style={{ color: '#F8F8FF' }} size="10x" />;
 };
 
 export default WeatherIcon;
