@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../../Context/AppContext';
 import { Smile } from '../../Util/faIcon';
+import './style/MainDustState.css';
 
 const MainDustState = () => {
   const context = useContext(AppContext);
@@ -10,10 +11,8 @@ const MainDustState = () => {
   const localIndex = dustData.findIndex((d) => d.MSRSTE_NM === '성동구');
   const localDustPM10 = dustData[localIndex] ? dustLevel(dustData[localIndex].PM10) : '';
 
-  console.log(localDustPM10);
-
   return (
-    <div>
+    <div className="main-dust-state">
       <div>(현재위치)</div>
       <div>{addr}</div>
       <div>{dustData[localIndex] ? dustData[localIndex].MSRDT : ''}</div>
