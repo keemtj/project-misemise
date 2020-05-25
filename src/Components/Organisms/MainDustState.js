@@ -1,6 +1,7 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable indent */
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { AppContext } from '../../Context/AppContext';
 import { Smile } from '../../Util/faIcon';
 import './style/MainDustState.css';
@@ -44,7 +45,9 @@ const MainDustState = () => {
       </div>
       <div>{localDustPM10.state}</div>
       <div>{localDustPM10.message}</div>
-      <button type="button">날씨날씨</button>
+      <Link to="/">
+        <button type="button">날씨날씨</button>
+      </Link>
     </div>
   );
 };
