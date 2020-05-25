@@ -34,7 +34,9 @@
   font-size: 1.6rem;
   font-weight: 900;
 }
-button {
+.main-addr {
+}
+.main-btn {
   /* border-style: none; */
   position: absolute;
   right: 0.5rem;
