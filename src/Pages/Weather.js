@@ -2,6 +2,7 @@
 import React, { useContext, useEffect } from 'react';
 import { AppContext } from '../Context/AppContext';
 import WeatherTemplate from '../Components/Templates/WeatherTemplate';
+import './style/Weather.css';
 
 const Weather = () => {
   const context = useContext(AppContext);
@@ -15,7 +16,7 @@ const Weather = () => {
   }, [locationState]);
 
   return (
-    <div>
+    <div className="WeatherPage">
       <WeatherTemplate />
     </div>
   );

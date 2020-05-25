@@ -1,6 +1,7 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable indent */
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { AppContext } from '../../Context/AppContext';
 import { Smile } from '../../Util/faIcon';
 import './style/MainDustState.css';
@@ -38,15 +39,17 @@ const MainDustState = () => {
     >
       <div>(현재위치)</div>
       <div className="main-addr">{addr}</div>
-      <div>{dustData[localIndex] ? dustData[localIndex].MSRDT : ''}</div>
+      <div>2020-05-25 07:00 PM</div>
       <div className="main-icon" style={{ fontSize: '4rem', color: '#F8F8F8' }}>
         <Smile />
       </div>
       <div>{localDustPM10.state}</div>
       <div>{localDustPM10.message}</div>
-      <button className="main-btn" type="button">
-        날씨날씨
-      </button>
+      <Link to="/">
+        <button className="main-btn" type="button">
+          날씨날씨
+        </button>
+      </Link>
     </div>
   );
 };
